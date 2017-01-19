@@ -1,2 +1,0 @@
-# devPortfolio
-My personal Portfolio
