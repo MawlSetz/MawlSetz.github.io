@@ -1,0 +1,28 @@
+$grey : #ececec;
+$darkgrey: #333333;
+
+body {
+  background-color: $grey;
+    ul#nav li{
+      display: inline;
+    }
+  .intro {
+    background-color: $darkgrey;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    img.molly {
+      max-width: 30%;
+      margin-left: 60%;
+    }
+  }
+  img.left {
+    max-width: 30%;
+    margin-left: 10%;
+  }
+  img.right {
+    max-width: 30%;
+    margin-left: 60%;
+  }
+
+}
