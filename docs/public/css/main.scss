@@ -1,5 +1,8 @@
 $grey : #ececec;
-$darkgrey: #333333;
+$darkgrey : #333333;
+$white: #ffffff;
+$textfont : 'Open Sans', sans-serif;
+$titlefont : 'Roboto', sans-serif;
 
 body {
   background-color: $grey;
@@ -7,7 +10,7 @@ body {
       display: inline;
     }
   .intro {
-    background-color: $darkgrey;
+    background-color: $white;
     width: 100%;
     height: auto;
     padding: 10%;
@@ -15,14 +18,57 @@ body {
       max-width: 30%;
       margin-left: 60%;
     }
+    /* unvisited link */
+  a:link {
+      color: $darkgrey;
   }
-  img.left {
-    max-width: 30%;
-    margin-left: 10%;
+
+  /* visited link */
+  a:visited {
+      color: navy;
   }
-  img.right {
-    max-width: 30%;
-    margin-left: 60%;
+
+  /* mouse over link */
+  a:hover {
+      color: #D800C9;
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+    //   h3 {
+    //   font-family: $titlefont;
+    //   font-size: 40px;
+    //   color: $darkgrey;
+    // }
+  }
+
+
+// First rendition
+  // img.left {
+  //   max-width: 30%;
+  //   margin-left: 10%;
+  // }
+  // img.right {
+  //   max-width: 30%;
+  //   margin-left: 60%;
+  // }
+
+  @-webkit-keyframes typing { from { width: 0; } }
+  @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+  h2 {
+  	font-family: $titlefont;
+    font-size: 40px;
+    color: $darkgrey;
+  	border-right: .1em solid $darkgrey;
+  	width: calc(.7em * 14);
+  	width: 15ch;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	-webkit-animation: typing 3s steps(14, end),
+  	           blink-caret .5s step-end infinite alternate;
   }
 
 }
